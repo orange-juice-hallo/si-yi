@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zn-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>晚餐選擇器</title>
+
+</head>
+
+<body style="margin: 0px;background-color:  rgb(7, 7, 24);color:rgb(63, 52, 107);">
+    <div style="text-align: center;">
+
+    <h1 style="font-size: 50px ;background-color: rgb(121, 121, 219);margin: 0px;padding: 4% 30%;">晚餐選擇器</h1>
+    <h2 style="font-size: 40px;">今天，你的晚餐是......</h2>
+    
+
+    <script> 
+        var dinner = ['炒飯','涼麵','包子','拉麵','炸醬麵','泡麵','罐頭','火鍋','烤肉','可麗餅','雞排','排骨便當','滷雞腿便當','炸雞腿便當','烏龍麵','春捲','義大利麵','餡餅','關東煮','清粥','沙拉','雞胸肉','炒麵','鍋燒麵',"滷肉飯","雙層牛肉堡+中薯+綠茶","雙層牛肉堡+中薯+可樂","大麥克+中薯+可樂","麥香魚+中薯+可樂","麥香雞+中薯+可樂","雙層牛肉堡+小杯可樂(1+1=69元)"];//31
+
+        function cho(){
+            document.getElementById("dinner").innerHTML = dinner[Math.floor(Math.random()*31)];}
+
+    </script>
+    <div>    
+        <p id="dinner" style="font-size: 50px;background-color: rgb(121, 121, 219);padding:10px; width: 600px; border: 2px solid rgb(238, 234, 255);margin-left: auto;margin-right: auto;">晚餐 </p>
+        <button type="button" onclick="cho()" style="font-size: 20px;cursor: pointer;">就決定是你了!</button> 
+    </div>
+    <h3>Ps:可以按F12看一下，因為我把東西通通寫在每一行，所以寫起來非常的痛苦。</h3>
+
+    </div>
+</body>
+</html>
+
