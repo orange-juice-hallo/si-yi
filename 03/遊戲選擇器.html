@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zn-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>遊戲推薦</title>
+    <link rel="stylesheet" href="/03/style.css">
+
+</head>
+<body >
+    <script> 
+        var dinner = ["R.E.P.O(多人恐怖)","among us(多人狼人殺，手機板免費)","lethal company(多人恐怖)","am I nima(恐怖解謎)","提西探險社(恐怖RPG)","IB(恐怖RPG)","marikinonline4(免費冒險純日文RPG)","APEX(多人射擊)","awaria(免費彈幕2D)","The Darkest Tales — Into the Nightmare(恐怖冒險demo)",
+        "undertale(冒險RPG)","deltarune(冒險RPG)"," Don't Drop The Cake: Prologue(免費恐怖冒險)","Garten of Banban(系列，恐怖)","Poppy playtime(系列,恐怖)","FNAF(恐怖，作品很多)","FNF(音遊)","Helltaker(免費地域把妹王)","Lily's well(免費,超級恐怖)","Trolley Delayma(解謎)",
+        "Titan souls(2D冒險，超難)","We Become What We Behold(血腥,社會寫實)"]; // 目前共22款
+
+        function cho(){
+            document.getElementById("dinner").innerHTML = dinner[Math.floor(Math.random()*22)];}
+
+    </script>
+
+    <p id="p1">遊戲推薦</p>
+    <p id="p2">要完甚麼呢~~</p>
+    <p id ="dinner" style="width: auto;">遊戲</p>
+    <button id="button" onclick="cho()">就決定是你了!</button>
+    <p style="line-height: 30px;font-size: 20px;">註: <br> *此處的遊戲包含恐怖、多人、單人、RPG、英文、中文、日文、demo、音遊 <br>*免費的才會特別標示 <br>*如果感覺都沒聽過，那很正常</p>
+
+
+</body>
+</html>
